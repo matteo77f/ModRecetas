@@ -2,16 +2,17 @@
 
 ## Épica 1: Ingesta de Recetas (Carga de Información)
 
-### US1.1: Carga de receta por Texto / Chat
+### US1.1: Carga de receta por Texto, Documento o Imagen
 **Como** usuario cocinero,
 
-**Quiero** pegar el texto de una receta o escribirla directamente en el chat,
+**Quiero** pegar el texto de una receta, subir un archivo o una foto con la receta,
 
-**Para** poder iniciar el proceso de modificación de manera rápida.
+**Para** poder iniciar el proceso de modificación de manera rápida y sin copiar manualmente.
 
 - **Criterios de Aceptación:**
   - **Dado** que el usuario está en la pantalla principal, **cuando** introduce el texto de una receta en el campo de entrada y presiona "Enviar", **entonces** el sistema debe procesar el texto y reconocer los ingredientes y pasos de preparación.
-  - **Dado** que el usuario envía un texto vacío, **cuando** intenta enviarlo, **entonces** el sistema debe mostrar un mensaje de error indicando que debe ingresar una receta válida.
+  - **Dado** que el usuario selecciona "Subir Documento" o "Subir Imagen", **cuando** adjunta un archivo válido (.pdf, .docx, .txt, .jpg, .png) de hasta 5MB, **entonces** el sistema debe extraer el texto de la receta correctamente y mostrarlo para confirmación.
+  - **Dado** que el usuario envía un texto vacío o adjunta un archivo no válido, **cuando** intenta enviar la receta, **entonces** el sistema debe mostrar un mensaje de error claro indicando que debe proporcionar una receta válida.
 
 ### US1.2: Carga de receta mediante Archivo (Doc/PDF)
 **Como** usuario cocinero,

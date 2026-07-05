@@ -43,3 +43,19 @@ ModRecetas es un MVP para transformar recetas hacia versiones más saludables us
 3. Construir la interfaz React con diseño verde saludable.
 4. Conectar el frontend con la API y manejar errores.
 5. Añadir validación de entrada y retroalimentación de usuario.
+
+## Prueba rápida del servicio AI
+1. En la carpeta `backend`, instala dependencias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Ejecuta la aplicación:
+   ```bash
+   python app.py
+   ```
+3. En otra terminal, ejecuta el demo:
+   ```bash
+   python demo_recommend.py
+   ```
+
+Eso enviará una receta de prueba a `/api/recommend` y mostrará la respuesta del servicio.

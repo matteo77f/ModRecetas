@@ -64,8 +64,33 @@ label {
   font-weight: 600;
 }
 
+.file-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.file-input-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.file-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.file-info {
+  margin-bottom: 1rem;
+  color: #165f46;
+  font-weight: 600;
+}
+
 textarea,
-input {
+input,
+.file-input-group input {
   width: 100%;
   border-radius: 0.75rem;
   border: 1px solid #d1fae5;
